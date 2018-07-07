@@ -1,0 +1,24 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  color: #999999;
+}
+
+.main {
+  padding: 40px $horizontalPaddingXS;
+  @media all and (min-width: $widthXS + 1) {
+    padding-left: $horizontalPaddingSM;
+    padding-right: $horizontalPaddingSM;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../base/variables";
+
+.info {
+  &__row {
+    margin-bottom: 20px;
+  }
+  &__label {
+    font-size: 10px;
+    font-weight: 600;
+    color: $secondaryTextColor;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  @media all and (min-width: $widthSM) {
+    display: table;
+    &__row {
+      display: table-row;
+    }
+    &__label {
+      padding-right: 15px;
+    }
+    &__label, &__value {
+      display: table-cell;
+      padding-bottom: 15px;
+    }
+  }
+}

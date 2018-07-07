@@ -1,0 +1,84 @@
+@import "../base/variables";
+
+.file {
+  &List {
+    margin: 0 -#{$horizontalPaddingXS};
+  }
+  //&:first-child {
+  //  border-top: 1px solid $keylineColor;
+  //}
+  position: relative;
+  border-bottom: 1px solid $keylineColor;
+  padding: 20px #{$horizontalPaddingXS + 65} 20px #{$horizontalPaddingXS + 25px};
+  height: 70px;
+
+  &.bm-type_selectAll {
+    padding-top: 28px;
+  }
+
+  &.bm-type_highlighted {
+    background-color: #f3f3f2;
+  }
+
+  &__checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none;
+    border: 2px solid #666;
+    border-radius: 2px;
+    position: absolute;
+    left: $horizontalPaddingXS;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &__type {
+    display: none;
+  }
+  &__name {
+    display: block;
+  }
+  &__desc {
+    color: $secondaryTextColor;
+    font-size: 10px;
+    font-weight: 600;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__actions {
+    position: absolute;
+    right: $horizontalPaddingXS;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__action {
+    margin-left: 10px;
+  }
+
+  @media all and (min-width: $widthXS + 1) {
+    &List {
+      margin: 0 -#{$horizontalPaddingSM};
+    }
+    padding: 20px #{$horizontalPaddingSM + 65} 20px #{$horizontalPaddingSM + 25 + 35};
+    &__type {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: $horizontalPaddingSM + 15;
+    }
+    &__type.fa-file {
+      background-color: rgba(240, 240, 240, 0.5);
+      padding: 7px 10px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+  }
+}

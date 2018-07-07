@@ -1,0 +1,30 @@
+@import "base/variables";
+
+.atom- {
+  &hiddenXs {
+    @media all and (max-width: $widthXS) {
+      display: none;
+    }
+  }
+  &hiddenSm {
+    @media all and (min-width: $widthXS + 1) and (max-width: $widthSM) {
+      display: none;
+    }
+  }
+  &hiddenMd {
+    @media all and (min-width: $widthSM + 1) {
+      display: none;
+    }
+  }
+  &pullRight {
+    float: right;
+  }
+  &pullLeft {
+    float: left;
+  }
+  &clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

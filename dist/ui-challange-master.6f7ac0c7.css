@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+ul {
+  list-style: none; }
+
+i {
+  color: #999999; }
+
+.main {
+  padding: 40px 20px; }
+  @media all and (min-width: 321px) {
+    .main {
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+@media all and (max-width: 320px) {
+  .atom-hiddenXs {
+    display: none; } }
+
+@media all and (min-width: 321px) and (max-width: 768px) {
+  .atom-hiddenSm {
+    display: none; } }
+
+@media all and (min-width: 769px) {
+  .atom-hiddenMd {
+    display: none; } }
+
+.atom-pullRight {
+  float: right; }
+
+.atom-pullLeft {
+  float: left; }
+
+.atom-clearFix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.header {
+  height: 75px;
+  padding: 20px 20px;
+  border-bottom: 1px solid #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media all and (min-width: 321px) {
+    .header {
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+.logo {
+  height: 35px;
+  order: 1; }
+
+.contactUs {
+  margin-top: 2px;
+  order: 2;
+  display: flex;
+  align-items: center;
+  padding-left: 20px; }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .contactUs {
+      border-left: 1px solid #e9e9e9; } }
+  .contactUs__label {
+    color: #cccccc;
+    margin-right: 20px; }
+  .contactUs__tel {
+    margin-left: 10px; }
+
+.link {
+  color: #663333; }
+
+.btn {
+  background-color: #ffcc33;
+  padding: 12px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  border-bottom: 2px solid #cc9933;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center; }
+
+.heroText {
+  text-align: center;
+  margin-bottom: 20px; }
+  .heroText__title {
+    font-weight: 300;
+    margin-bottom: 15px; }
+  .heroText__subTitle {
+    font-weight: 100;
+    font-size: 20px; }
+
+.propertyInfo {
+  margin-bottom: 20px; }
+  .propertyInfo__image {
+    width: 100%;
+    margin-bottom: 20px; }
+  .propertyInfo__download {
+    width: 100%; }
+  @media all and (min-width: 321px) {
+    .propertyInfo__image {
+      width: 250px;
+      float: left; }
+    .propertyInfo__meta {
+      float: left;
+      margin-left: 20px; }
+    .propertyInfo__download {
+      float: left;
+      clear: left;
+      width: 250px; } }
+  @media all and (min-width: 768px) {
+    .propertyInfo__meta {
+      margin-top: 10px; }
+    .propertyInfo__download {
+      float: right;
+      clear: none; } }
+
+@media all and (min-width: 769px) {
+  .property {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #e9e9e9;
+    border-bottom: none;
+    padding: 15px 30px 0; } }
+
+.info__row {
+  margin-bottom: 20px; }
+
+.info__label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #cccccc;
+  text-transform: uppercase;
+  display: block; }
+
+@media all and (min-width: 768px) {
+  .info {
+    display: table; }
+    .info__row {
+      display: table-row; }
+    .info__label {
+      padding-right: 15px; }
+    .info__label, .info__value {
+      display: table-cell;
+      padding-bottom: 15px; } }
+
+.file {
+  position: relative;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 20px 85px 20px 45px;
+  height: 70px; }
+  .fileList {
+    margin: 0 -20px; }
+  .file.bm-type_selectAll {
+    padding-top: 28px; }
+  .file.bm-type_highlighted {
+    background-color: #f3f3f2; }
+  .file__checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none;
+    border: 2px solid #666;
+    border-radius: 2px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .file__type {
+    display: none; }
+  .file__name {
+    display: block; }
+  .file__desc {
+    color: #cccccc;
+    font-size: 10px;
+    font-weight: 600;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .file__actions {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); }
+  .file__action {
+    margin-left: 10px; }
+  @media all and (min-width: 321px) {
+    .file {
+      padding: 20px 95px 20px 90px; }
+      .fileList {
+        margin: 0 -30px; }
+      .file__type {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 45px; }
+      .file__type.fa-file {
+        background-color: rgba(240, 240, 240, 0.5);
+        padding: 7px 10px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center; } }

@@ -1,0 +1,49 @@
+.property {
+  &Info {
+    $leftColWidthTablet: 250px;
+    margin-bottom: 20px;
+    &__image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__download {
+      width: 100%;
+    }
+
+    @media all and (min-width: $widthXS + 1) {
+      &__image {
+        width: $leftColWidthTablet;
+        float: left;
+      }
+
+      &__meta {
+        float: left;
+        margin-left: 20px;
+      }
+
+      &__download {
+        float: left;
+        clear: left;
+        width: $leftColWidthTablet;
+      }
+    }
+
+    @media all and (min-width: $widthSM) {
+      &__meta {
+        margin-top: 10px;
+      }
+      &__download {
+        float: right;
+        clear: none;
+      }
+    }
+  }
+  @media all and (min-width: $widthSM + 1) {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid $keylineColor;
+    border-bottom: none;
+    padding: 15px $horizontalPaddingSM 0;
+  }
+}
